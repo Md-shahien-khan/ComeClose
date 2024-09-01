@@ -1,0 +1,111 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+*, 
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --white : #fff;
+    --black : #222;
+    --green : #6cbe07;
+    --grey1 : #f0f0f0;
+    --grey2 : #e9d7d3;
+}
+
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Spectral', sans-serif;
+    font-size: 1.6rem;
+    background-color: var(--white);
+
+    font-weight: 400;
+    font-style: normal;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+li{
+    list-style-type: none;
+}
+.container{
+    max-width: 114rem;
+    margin: 0 auto;
+    padding: 0 3rem;
+}
+.d-flex{
+    display: flex;
+    align-items: center;
+}
+
+/* Header */
+.header{
+    position: relative;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+.top-nav{
+    background-color: var(--green);
+    font-size: 1.6rem;
+    /* padding: 7px; */
+    color: var(--white);
+}
+.top-nav div{
+    justify-content: space-between;
+    height: 4.5rem;
+}
+.top-nav a{
+    padding: 0 0.7rem;
+    color: var(--white);
+}
+
+/* Navigation  */
+.navigation{
+    height: 6rem;
+    line-height: 6rem;
+}
+.nav-center{
+    justify-content: space-between;
+}
+/* nav list icons */
+.nav-center .nav-item:not(:last-child){
+    margin-right: 0.8rem;
+}
+.nav-center .nav-link{
+    font-size: 1.8rem;
+    padding: 1rem;
+}
+.nav-center .nav-link:hover{
+    color: var(--green);
+}
+
+
+/* Icons */
+.icon{
+    cursor: pointer;
+    font-size: 2.3rem;
+    padding: 0.1rem;
+    color: #555;
+    position: relative;
+}
+.icon:not(:last-child){
+    margin-right : 0.7rem;          
+}
+.icon span{
+    position: absolute;
+    top: 4px;
+    right: -9px;
+    background-color: var(--green);
+    color: var(--white);
+    border-radius: 50%;
+    font-size: 1.3rem;
+    height: 2rem;
+    width: 2rem;
+    justify-content: center;
+}
