@@ -109,3 +109,62 @@ li{
     width: 2rem;
     justify-content: center;
 }
+.nav-list .icons{
+    display: none;
+}
+.nav-center .menu{
+    display: none;
+    font-size: 2.3rem;
+    color: var(--black);
+    cursor: pointer;
+}
+
+
+/* media query */
+@media screen and (max-width : 768px) {
+    .nav-list{
+        margin-top: 15px;
+        position: fixed;
+        top: 12%;
+        left: -100%;
+        /* it was 0 then we added -100 to remove */
+        flex-direction: column;
+        align-items: flex-start;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+        background-color: white;
+        height: 100%;
+        max-width: 35rem;
+        width: 0;
+        /* it was 100% before */
+        z-index: 100;
+        transition: all 300mx ease-in-out;
+    }
+    .nav-list.open{
+        left: 0;
+        width: 100%;
+    }
+    .nav-list .nav-item{
+        margin: 0 0 1rem 0;
+        width: 100%;
+    }
+    .nav-list .nav-links{
+        font-size: 2rem;
+        color: var(--black);
+    }
+    .nav-center .menu{
+        display: block;
+    }
+    .icons{
+        display: none;
+    }
+    .nav-list .icons{
+        display: flex;
+    }
+    .top-nav ul{
+        display: none;
+    }
+    .top-nav div{
+        justify-content: center;
+        height: 3rem;
+    }
+}
